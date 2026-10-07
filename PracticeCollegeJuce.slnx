@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="PracticeCollegeJuce/PracticeCollegeJuce.vcxproj" Id="3490ad28-0d51-4bad-a389-1af5c9b3e8ef" />
+</Solution>
