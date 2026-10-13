@@ -17,7 +17,7 @@ int main()
 	double JucePricesFruct[7]{ 10.45, 20.25, 30.55, 40.65, 50.76 , 60.70, 70.50 };
 	double JucePricesVege[3]{ 10.25, 20.35, 30.55 };
 	double TeaPrices[2]{ 15, 25 };
-	int JuceFructCount = 0;
+	int JuceFructCount = 0;  
 	int JuceVegeCount = 0;
 	int TeaCount = 0;
 	int BacketSize = 0;
@@ -48,44 +48,46 @@ int main()
 			} // 11111
 			std::cout << "Введите номер сока или 0 чтобы отказаться\n";
 			std::cin >> ItemId;
-
+				
 			if (ItemId == 0)
-			{
+				{
 				std::cout << "Вы отказались, возврат в меню\n";
 				break;
 
-			}
+				}
 			if (ItemId < 0 || ItemId > JuceFructCount)
-			{
+				{
 				std::cout << "Вы ввели неправильный номер, попытаетесь ещё\n";
 				continue;
-			}
+				}
 			Quality = ItemId - 1;
 			std::cout << "Сколько штук взять?" << ArrayJuceFruct[Quality];
 			std::cin >> Quality;
 			if (Quality < 0)
-			{
+				{
 				std::cout << "Колличество должно быть больше нуля\n";
 				continue;
-			}
+					}
 			Quality++;
 			std::cout << "Добавлено в корзину" << Quality << "\n";
 			std::cout << "Хотите добавить ещё?( 1 - да/ 2 - нет)\n";
 			std::cin >> TradeContinue;
-			if (TradeContinue == 1)
-			{
+					if (TradeContinue == 1)
+					{
 				continue;
-
-			}
-			if (TradeContinue == 2)
-			{
+							
+						}
+						if (TradeContinue == 2)
+						{
 				std::cout << "Продажа завершена\n";
 				break;
-			}
-			    
+						}
+						 
+					}
+				}
 
-			if (Choice == 2)
-			{
+				if (Choice == 2)
+				{
 				std::cout << "\nОвощные соки\n";
 				for (int i = 0; i < JuceVegeCount; i++)
 				{
@@ -107,12 +109,12 @@ int main()
 							std::cout << "Вы отказались, возврат в меню\n";
 							break;
 
-						}
+			}
 						if (ItemId < 0 || ItemId > TeaCount)
 						{
 							std::cout << "Вы ввели неправильный номер, попытаетесь ещё\n";
 							continue;
-						}
+    }
 						Quality = ItemId - 1;
 						std::cout << "Сколько штук взять?" << ArrayJuceFruct[Quality];
 						std::cin >> Quality;
@@ -123,31 +125,32 @@ int main()
 						if (TradeContinue == 1)
 						{
 							continue;
-
+	
 						}
 						if (TradeContinue == 2)
 						{
 							break;
-							    
+
 						}
 					}
-						
+	
 				}
 
 			}
-			
+   
 		}
-
+  
 	}
 	if (Choice == 4)
 	{
 		std::cout << "Работа с магазином завершена";
-		
-		
+	
+	
 	}
-
-return 0;
+	
+	return 0;
 }
 
 
 
+}
